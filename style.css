@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&display=swap');
+/* 
+   font-family: "Oswald", sans-serif;
+   font-family: "Josefin Slab", serif;
+   font-family: "Bodoni Moda", serif;
+  
+ 
+*/
+
+
+:root {
+    --color0: #ffffff;
+    --color1: #056674;
+    --color2: #66BFBF;
+    --font2: "Bodoni Moda", serif;
+    --font1: "Oswald", sans-serif;
+    --font3: "Josefin Slab", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*------------------------------animation------------------------------*/
+
+@keyframes left_fade_in {
+    from {
+
+        opacity: 0;
+    }
+
+    to {
+
+        opacity: 1;
+    }
+
+}
+
+@keyframes text_up {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes bg_wave1 {
+    from {
+        border: 10px solid var(--color0);
+        width: 0;
+        height: 0;
+
+    }
+
+    to {
+        border: 50px solid var(--color0);
+        width: 250rem;
+        height: 250rem;
+
+    }
+}
+
+@keyframes bg_wave2 {
+    from {
+        border: 20px solid var(--color0);
+        width: 0;
+        height: 0;
+
+    }
+
+    to {
+        border: 180px solid var(--color0);
+        width: 250rem;
+        height: 250rem;
+
+    }
+}
+
+@keyframes bg_wave3 {
+    from {
+        border: 20px solid var(--color0);
+        width: 0;
+        height: 0;
+
+    }
+
+    to {
+        border: 100px solid var(--color0);
+        width: 250rem;
+        height: 250rem;
+
+    }
+}
+
+/*------------------------------animation------------------------------*/
+
+/*------------------------------nav------------------------------*/
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+
+#nav_con {
+
+    width: 100%;
+    height: 3.5rem;
+    background-color: var(--color2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#logo {
+    margin-left: 1rem;
+    font-family: var(--font2);
+    color: var(--color0);
+    font-size: 2rem;
+}
+
+#menu_icon {
+    position: relative;
+    margin-right: 1rem;
+    width: 3rem;
+    height: 3rem;
+
+}
+
+.bar1 {
+    left: 20%;
+    top: 35%;
+    position: absolute;
+    width: 37.5%;
+    height: 3px;
+    background-color: var(--color0);
+    border-radius: 2px;
+    transition: transform 0.1s;
+
+}
+
+.bar2 {
+    top: 50%;
+    left: 12.5%;
+    position: absolute;
+    width: 75%;
+    height: 3px;
+    background-color: var(--color0);
+    border-radius: 2px;
+    transition: transform 0.1s;
+
+}
+
+.bar3 {
+    right: 15%;
+    bottom: 31%;
+    position: absolute;
+    width: 37.5%;
+    height: 3px;
+    background-color: var(--color0);
+    border-radius: 2px;
+    transition: transform 0.1s;
+
+}
+
+.menu_con {
+
+    width: 100%;
+    height: auto;
+    background-color: var(--color1);
+    display: none;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    animation-name: left_fade_in;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    padding: 1rem;
+    transition: 1s;
+
+
+
+}
+
+.menu_con h4 {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    color: var(--color2);
+    font-family: var(--font3);
+    font-weight: 400;
+    font-size: 2rem;
+    transition: 0.1s;
+
+}
+
+h4:hover {
+    color: var(--color1);
+    background-color: var(--color2);
+
+}
+
+details {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    color: var(--color2);
+    font-family: var(--font3);
+    font-weight: 400;
+    font-size: 2rem;
+    transition: 0.1s;
+
+}
+
+
+summary{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    color: var(--color2);
+    font-family: var(--font3);
+    font-weight: 400;
+    transition: 0.1s;
+
+}
+
+details > summary:hover{
+    color: var(--color1);
+    background-color: var(--color2);
+
+}
+
+details>h4:hover {
+    background-color: var(--color2);
+    color: var(--color1);
+}
+
+
+/*------------------------------nav------------------------------*/
+/*------------------------------Home------------------------------*/
+#home {
+    width: 100%;
+    background-color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    
+
+
+
+
+
+}
+
+#herosec {
+    position: relative;
+    padding-top: 1rem;
+    width: 90%;
+    height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    display: flex;
+    align-items: center;
+
+
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+
+
+}
+
+#herosec::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+
+#herosec>span:nth-child(1) {
+    position: absolute;
+    width: 80%;
+    height: 110%;
+    background-color: var(--color1);
+    border-radius: 20px;
+    transform: translateZ(300px) scale(0.6);
+
+}
+
+#herosec>span:nth-child(2) {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 80%;
+    height: 60%;
+    background-color: var(--color2);
+    border-radius: 20px;
+    z-index: 7;
+    border: 10px solid #4c6c74;
+
+
+}
+
+#herosec>span:nth-child(3) {
+    position: absolute;
+    left: 3%;
+    top: 70%;
+    width: 50%;
+    height: 30%;
+    background-color: var(--color1);
+    border-radius: 20px;
+    border: 10px solid var(--color2);
+    z-index: 10;
+
+}
+
+
+
+#herosec>.img-container1 {
+    position: absolute;
+    top: 110%;
+    overflow: hidden;
+    /* Hides overflow to allow border-radius to show */
+    border-radius: 20px;
+    /* Add border-radius here */
+    width: 30%;
+    /* Match image width */
+    height: auto;
+    z-index: 11;
+    transform: translateZ(-700px) scale(1.6);
+}
+
+#herosec>.img-container1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#herosec>.img-container2 {
+    position: absolute;
+    top: 20%;
+    right: -10%;
+    overflow: hidden;
+    /* Hides overflow to allow border-radius to show */
+    border-radius: 20px;
+    /* Add border-radius here */
+    width: 40%;
+    /* Match image width */
+    height: auto;
+    z-index: 9;
+    transform: translateZ(-1200px) scale(2.6);
+}
+
+#herosec>.img-container2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.herosec_text {
+    margin-top: 2rem;
+    position: relative;
+    width: 80%;
+    height: auto;
+    z-index: 12;
+    transform: translateZ(500px) scale(0.3);
+    display: flex;
+    flex-direction: column;
+
+
+
+
+}
+
+.herosec_text>h2 {
+    font-size: 7rem;
+    font-family: var(--font1);
+    font-weight: 400;
+    color: var(--color0);
+
+}
+
+.herosec_text>h2:nth-of-type(2) {
+    text-align: end;
+
+}
+
+.herosec_text>h1 {
+    font-size: 18rem;
+    font-family: var(--font2);
+    color: var(--color0);
+    font-weight: 700;
+    animation-name: text_up;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+/*------------------------------About------------------------------*/
+
+#about {
+    background-color: var(--color1);
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
+    
+
+
+}
+
+
+#about>h1 {
+    font-family: var(--font2);
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--color2);
+    margin-bottom: 3rem;
+    margin-top: 10rem;
+}
+
+#about>span {
+
+
+    position: absolute;
+    border-radius: 50%;
+    top: -50rem;
+    left: -50rem;
+    z-index: 0;
+    animation-name: bg_wave1;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+
+}
+
+#about>span:nth-of-type(2) {
+    animation-name: bg_wave2;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-delay: 0.2s;
+}
+
+#about>span:nth-of-type(3) {
+
+    animation-name: bg_wave3;
+    animation-duration: 20s;
+    animation-delay: 0.7s;
+}
+
+.about_con {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    padding: 2rem;
+    margin-bottom: 10rem;
+    
+}
+
+.about_con>div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+.about_con>div>img {
+
+    width: 20rem;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: -20px -10px var(--color1);
+    transform: rotate(-10deg);
+    transition: 0.5s;
+
+
+}
+
+.about_con>div>img:hover {
+    transform: rotate(0deg);
+    box-shadow: none;
+
+}
+
+
+.about_con>div>div {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    padding: 1rem;
+    border: 4px solid var(--color1);
+    border-radius: 20px;
+    transform: rotate(10deg);
+    z-index: 3;
+    transition: 0.5s;
+
+}
+
+.about_con>div>div:hover {
+    transform: rotate(0deg);
+}
+
+.about_con>div>div>h3 {
+    font-family: var(--font1);
+    font-size: 2vw;
+    color: var(--color2);
+
+}
+
+
+/*------------------------------About------------------------------*/
+
+/*------------------------------Home------------------------------*/
+
+
+/*------------------------------Footer------------------------------*/
+
+
+  
+  .footer {
+    margin-top: 3rem;
+    position: relative;
+    width: 100%;
+    background: var(--color2);
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--font3);
+    
+    
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: var(--color1);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: var(--color1);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    font-weight: 900;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: var(--color1);
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 900;
+  }
+  
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/Z6FsCZx/wave.png");
+    background-size: 1000px 100px;
+  }
+  
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 5s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+/*------------------------------Footer------------------------------*/
+

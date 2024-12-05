@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/CruisElite/static/css/main.0435f6a9.css",
+    "main.js": "/CruisElite/static/js/main.af783dcc.js",
+    "static/media/gym.jpg": "/CruisElite/static/media/gym.81107f7c672a7fe35808.jpg",
+    "static/media/saloon.jpg": "/CruisElite/static/media/saloon.e1e461a81a24022a3228.jpg",
+    "static/media/Goat.jpg": "/CruisElite/static/media/Goat.88e089a9d7aa66e15976.jpg",
+    "static/media/crusie01.png": "/CruisElite/static/media/crusie01.b1caf00989465351c992.png",
+    "static/media/Salaar.jpg": "/CruisElite/static/media/Salaar.49ca82b3aa273e0af389.jpg",
+    "static/media/island02.png": "/CruisElite/static/media/island02.e7d5214d10c4490e4764.png",
+    "static/media/crusie04.jpeg": "/CruisElite/static/media/crusie04.37eb1bbcf85348488437.jpeg",
+    "static/media/pizza.jpeg": "/CruisElite/static/media/pizza.e7550d87b0a6af46f2e9.jpeg",
+    "static/media/Jailer.jpg": "/CruisElite/static/media/Jailer.0230aef635ac32f7d324.jpg",
+    "static/media/crusieroom.jpeg": "/CruisElite/static/media/crusieroom.4021b93fa2bf52d930be.jpeg",
+    "static/media/chickentikka.jpeg": "/CruisElite/static/media/chickentikka.4d38e1af0e60c0999e38.jpeg",
+    "static/media/salad.jpeg": "/CruisElite/static/media/salad.b97aa68c66412b011524.jpeg",
+    "static/media/friedrice.jpeg": "/CruisElite/static/media/friedrice.bbd3f49cd0e001c58b23.jpeg",
+    "static/media/butterchicken.jpeg": "/CruisElite/static/media/butterchicken.723f0ff205e4adf4e423.jpeg",
+    "static/media/vegroll.jpeg": "/CruisElite/static/media/vegroll.538475f8130b492ce8a0.jpeg",
+    "static/media/friedchicken.jpeg": "/CruisElite/static/media/friedchicken.6e3f07354307be7f79a5.jpeg",
+    "static/media/noodles.jpeg": "/CruisElite/static/media/noodles.28bad12db4a8052da4f7.jpeg",
+    "static/media/Pushpa.jpg": "/CruisElite/static/media/Pushpa.001d67c202727f72188f.jpg",
+    "static/media/icecream.jpeg": "/CruisElite/static/media/icecream.31556eb347a5c72b028c.jpeg",
+    "static/media/frenchfries.jpeg": "/CruisElite/static/media/frenchfries.bcd66d7718a63dde7f0b.jpeg",
+    "static/media/cake.jpeg": "/CruisElite/static/media/cake.086f2d0bea9bc7f4c3cf.jpeg",
+    "index.html": "/CruisElite/index.html",
+    "main.0435f6a9.css.map": "/CruisElite/static/css/main.0435f6a9.css.map",
+    "main.af783dcc.js.map": "/CruisElite/static/js/main.af783dcc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0435f6a9.css",
+    "static/js/main.af783dcc.js"
+  ]
+}
