@@ -1,0 +1,178 @@
+#ticket_seat{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+#ticket_seat > #info{
+    width: 100%;
+   height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    flex-wrap: wrap;
+    
+}
+
+
+
+#ticket_seat > #info > span{
+    width:25px;
+    height: 25px;
+    border-radius: 5px ;
+    border: 1px solid #00000068;
+
+}
+
+#ticket_seat > #info > h2{
+    font-family: var(--font3);
+    font-size: 2vw;
+    color: var(--color1);
+}
+
+#ticket_seat > #info > button{
+    font-family: var(--font3);
+    font-size: 1.5vw;
+    padding: 0.3rem;
+    color: var(--color1);
+    border-radius: 5px;
+    background-color: var(--color0);
+    border: 3px solid var(--color1);
+    cursor: pointer;
+}
+
+#ticket_seat > #info > button:active{
+    background-color: var(--color1);
+    color: var(--color0);
+}
+
+
+#ticket_seat > #blueprint{
+    width: 95%;
+    height: 80%;
+    background-color: rgba(89, 89, 89, 0.182);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#blueprint > #screen{
+    transform: translateY(50%);
+    width: 70%;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0.701);
+    position: relative;
+    
+}
+
+
+
+#blueprint > .seats{
+    width: 100%;
+    height: 80%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#blueprint > .seats > div{
+    width: 100%;
+    height: 100%;
+   display: flex;
+   justify-content: center; 
+   gap: 1rem;
+}
+
+#blueprint > .seats > div > div{
+    width: 30%;
+    height: 80% ;
+    columns: 5;
+    column-gap: 10px;
+    
+
+
+}
+
+#blueprint > .seats > div > div > div{
+    width:25px;
+    height: 25px;
+    border-radius: 5px ;
+    border: 1px solid #00000068;
+    margin-bottom: 0.5rem;
+}
+
+
+.selected{
+    background-color: lightgreen;
+}
+.booked{
+    background-color: crimson;
+}
+.available{
+   background-color: skyblue;
+}
+
+
+.seat_button{
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem ;
+}
+
+.seat_button > button{
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-family: var(--font3);
+    font-weight: 700;
+    border-radius: 5px;
+    
+}
+
+
+
+@media only screen and (max-width: 800px){
+    #ticket_seat > #info > h2{
+        font-size: 3.5vw;
+    }
+
+    #ticket_seat > #info > div{
+        font-size: 3.2vw;
+    }
+
+   
+    #ticket_seat > #info{
+        gap:0.5rem;
+    }
+    
+    #ticket_seat > #info > span{
+        width:18px;
+        height:18px;
+        border-radius: 3px ;
+    }
+
+    #blueprint > .seats > div > div > div{
+        width:18px;
+        height: 18px;
+        border-radius: 3px ;
+    }
+
+    .seat_button > button{
+        width: 17vw;
+        height: 5vw;
+        font-size: 2.2vw;
+     
+    }
+
+}

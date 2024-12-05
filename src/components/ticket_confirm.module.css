@@ -1,0 +1,138 @@
+#ticket_confirm{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ticket_confirm_con{
+    width: 80%;
+    height: 60%;
+    background-color: var(--color0);
+    border-radius: 20px;
+    border: 7px solid #000000;
+    display: flex;
+   
+}
+
+#ticket_confirm_con > .movie_details{
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 5px dashed #000000;
+}
+
+
+
+#ticket_confirm_con > .movie_details > img{
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+  border-radius: 20px;
+  
+}
+
+#ticket_confirm_con > .seat_details{
+    flex-grow: 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#ticket_confirm_con > .seat_details > h1:nth-of-type(1){
+    width: 100%;
+    color: var(--color0);
+    background-color: var(--color2);
+    font-size: 3.2vw;
+    padding-left: 2rem;
+    border-top-right-radius: 10px;
+    font-family: var(--font2);
+}
+
+#ticket_confirm_con > .seat_details > h1:nth-of-type(2){
+    font-family: var(--font2);
+    background-color:#000000;
+    color: var(--color0);
+    width: 100%;
+    text-align: center;
+    font-size: 3vw
+}
+
+#ticket_confirm_con > .seat_details >h2{
+    font-family: var(--font1);
+    color: var(--color1);
+    font-size: 2vw;
+    width: 100%;
+    padding-left: 2rem;
+    
+}
+
+#ticket_confirm_con > .seat_details >h3{
+    font-family: var(--font3);
+    font-size: 2.5vw;
+    
+}
+
+
+@media only screen and (max-width: 900px){
+   
+    #ticket_confirm_con{
+        width: 90%;
+        height: 40%;
+    }
+
+}
+
+@media only screen and (max-width: 700px){
+
+   
+
+
+    #ticket_confirm_con > .seat_details > h1:nth-last-child(1){
+        font-size: 4vw;
+        padding-left: 0.5rem;
+    }
+    #ticket_confirm_con > .seat_details > h1:nth-last-child(2){
+        font-size: 4vw;
+        padding-left: 0.5rem;
+    }
+    #ticket_confirm_con > .seat_details > h2{
+        font-size: 3vw;
+        padding-left: 0.5rem;
+    }
+    #ticket_confirm_con > .seat_details > h3{
+        font-size: 3.4vw;
+        padding-left: 0.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+   
+    #ticket_confirm_con{
+        width: 90%;
+        height: 80%;
+        flex-direction: column;
+        
+    }
+
+    #ticket_confirm_con > .movie_details {
+        border-right: none;
+        border-bottom: 5px dashed #000000;
+    }
+
+    #ticket_confirm_con > .movie_details > img{
+        width: 70%;
+        height: 80%;
+        border-radius: 5px;
+    }
+}
+
+
+
+

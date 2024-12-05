@@ -1,0 +1,153 @@
+
+/*-----------------------------Nav------------------------------*/
+@media only screen and (max-width: 1050px){
+    .menu_con h4 {
+        font-size: 5vw;
+      
+    }
+    details{
+        font-size: 5vw;
+       
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .menu_con{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+/*-----------------------------Nav------------------------------*/
+/*-----------------------------Home------------------------------*/
+
+@media only screen and (max-width: 1050px) {
+    
+     
+
+    #herosec >.img-container1{
+         width: 40%;
+    }
+    
+    #herosec >.img-container2{
+        width: 50%;
+    }
+
+
+    .herosec_text > h2{
+        font-size: 5rem;
+    }
+
+    .herosec_text > h1{
+        font-size: 10rem;
+    }
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+    
+     #herosec{
+        height: 80vh;
+     }
+
+
+    #herosec >.img-container1{
+        width: 50%;
+   }
+   
+   #herosec >.img-container2{
+       width: 60%;
+   }
+
+
+    .herosec_text > h2{
+        font-size: 3rem;
+    }
+
+    .herosec_text > h1{
+        font-size: 7rem;
+    }
+    
+}
+
+@media only screen and (max-width: 480px) {
+    
+  
+
+
+    .herosec_text > h2{
+        font-size: 3rem;
+    }
+
+    .herosec_text > h1{
+        font-size: 5rem;
+    }
+    
+
+    
+  
+}
+
+/*-----------------------------Home------------------------------*/
+/*-----------------------------About------------------------------*/
+
+@media only screen and (max-width: 1100px){
+
+    #about >h1{
+        font-size: 3rem;
+    }
+
+    .about_con{
+        gap: 5rem;
+    }
+
+    .about_con > div{
+        gap:3rem;
+    }
+
+}
+@media only screen and (max-width: 800px){
+
+    
+
+    .about_con > div > div {
+        padding: 0.2rem;
+        width:90%;
+        
+    }
+
+    .about_con > div > img {
+   
+        width:15rem;
+        height: 20rem;
+    }
+
+    .about_con > div >div > h3{
+        font-size: 4vw
+    }
+    
+}
+
+@media only screen and (max-width: 400px){
+
+    .about_con > div >div > h3{
+        font-size: 5vw
+    }
+    
+    
+
+}
+
+
+
+
+
+
+
+/*-----------------------------About------------------------------*/
