@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CruisElite/static/css/main.0435f6a9.css",
-    "main.js": "/CruisElite/static/js/main.af783dcc.js",
+    "main.js": "/CruisElite/static/js/main.ca79305e.js",
     "static/media/gym.jpg": "/CruisElite/static/media/gym.81107f7c672a7fe35808.jpg",
     "static/media/saloon.jpg": "/CruisElite/static/media/saloon.e1e461a81a24022a3228.jpg",
     "static/media/Goat.jpg": "/CruisElite/static/media/Goat.88e089a9d7aa66e15976.jpg",
@@ -25,10 +25,10 @@
     "static/media/cake.jpeg": "/CruisElite/static/media/cake.086f2d0bea9bc7f4c3cf.jpeg",
     "index.html": "/CruisElite/index.html",
     "main.0435f6a9.css.map": "/CruisElite/static/css/main.0435f6a9.css.map",
-    "main.af783dcc.js.map": "/CruisElite/static/js/main.af783dcc.js.map"
+    "main.ca79305e.js.map": "/CruisElite/static/js/main.ca79305e.js.map"
   },
   "entrypoints": [
     "static/css/main.0435f6a9.css",
-    "static/js/main.af783dcc.js"
+    "static/js/main.ca79305e.js"
   ]
 }
